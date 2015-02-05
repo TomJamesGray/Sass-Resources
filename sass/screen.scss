@@ -1,0 +1,97 @@
+@import "compass/reset";
+/*Import main color + font variables*/
+@import "variables";
+/*Import libraries*/
+@import "buttons";
+@import "form-inputs";
+@import "alerts";
+
+@mixin full_width_img($img_loc){
+	background: url($img_loc) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='$img_loc', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='$img_loc', sizingMethod='scale')";
+}
+::selection{
+	background-color: #CB2917;
+	color:#fff;
+}
+nav{
+	width: 100%;
+	height: auto;
+	background-color:$col2;
+	position: fixed;
+	bottom: 0.00em;
+	z-index: 100;
+td{
+	padding: 20px;
+	font-family: $mainFont;
+	font-size: 1.5em;
+	text-align: center
+}
+td:hover{
+	transition: all 1s ease;
+	background-color:$col3;
+	cursor: pointer;
+}
+}
+.content{
+	margin-left:10%;
+	padding-bottom:70px;
+	width: 80%;
+}
+h1{
+	font-family: $mainFont;
+	font-size: 3em;
+	margin: 10px;
+}
+h2{
+	font-family: $mainFont;
+	font-size: 2.5em;
+	margin: 8px;
+}
+#title_area{
+	padding-bottom: 30%;
+}
+#title_area_contain{
+	height:80%;
+	padding-top:60px;
+	color:$fontCol;
+	@include full_width_img('title_area.jpg');
+}
+.underline{
+	border-bottom: 2px solid #000;
+}
+hr{
+	width:100%;
+	height: 3px;
+	border-color:#000;
+	background-color:#000;
+	outline: none;
+	margin-left:0;
+}
+p{
+	font-family: $copyText;
+	font-size: 1.2em;
+	line-height: 130%;
+	display: inline;
+}
+.emphasis{
+	background-color:$emphasis;
+	color:#fff;
+}
+.align_right{
+	text-align: right;
+	float: right;
+}
+#footer_text{
+	margin-left:10%;
+}
+footer{
+	padding-bottom:20%;
+	color:$fontCol;
+	@include full_width_img('title_area.jpg');
+}

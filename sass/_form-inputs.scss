@@ -1,0 +1,110 @@
+/*Search bar*/
+$search-bg-col:#16B11E;
+$search-placeholder-color:#fff;
+
+input[type=text]{
+	border: 5px solid $col2;
+	outline: none;
+}
+input[type=text]:focus{
+	transition: all 0.5s ease;
+	border-color:$fontCol;
+}
+input[type=password]{
+	border: 5px solid $col2;
+	outline: none;
+}
+input[type=password]:focus{
+	transition: all 0.5s ease;
+	border-color:$fontCol;
+}
+/*Drop down list*/
+select{
+	font-size: 1em;
+	padding: 3px;
+	width: 130px;
+	border: 1px solid $borderCol;
+	outline: none;
+
+	-webkit-appearance: none; 
+	-moz-appearance:none;
+	text-indent: 1px;
+	text-overflow: '';
+
+	color:#000;
+	background: #fff url(../imgs/dropDownArrow.png) no-repeat 90% center;
+}
+// File upload
+.fileUpload {
+	position: relative;
+	overflow: hidden;
+	margin: 10px;
+	padding: 10px;
+	cursor: pointer;
+	display: inline;
+}
+.fileUpload > span{
+	position: relative;
+	border: 1px solid $borderCol;
+	border-radius: 10px;
+	background-color: $borderCol;
+	padding: 5px;
+	font-size: 1.7em;
+	font-family: $mainFont;
+	cursor: pointer;
+}
+input.upload{
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	cursor: pointer;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+#uploadFileOutput{
+	border:2px solid desaturate($emphasis,80%);
+	border-radius: 5px;
+}
+// Search bar
+.searchContainer{
+	z-index: 2;
+	width: 200px;
+	/*margin-left: -165px;*/
+	background-color: $search-bg-col;
+	border: 7px solid $search-bg-col;
+	border-top-right-radius: 500px;
+	border-bottom-right-radius: 500px;
+}
+/* #searchContainer:hover{
+	transition:all 1s ease;
+	margin-left: 0;
+} */
+input[name=q]{
+	border:none;
+	font-size: 1em;
+	padding: 3px;
+	width: 150px;
+	background-color:$search-bg-col;
+	color:#fff;
+}
+.searchButton{
+	width: 30px;
+	height: 30px;
+	float: right;
+}
+/*Style placeholder text color*/
+input[name=q]::-webkit-input-placeholder {
+   color: $search-placeholder-color;
+}
+input[name=q]:-moz-placeholder { /* Firefox 18- */
+   color: $search-placeholder-color;  
+}
+input[name=q]::-moz-placeholder {  /* Firefox 19+ */
+   color: $search-placeholder-color;  
+}
+input[name=q]:-ms-input-placeholder {  
+   color: $search-placeholder-color;  
+}
