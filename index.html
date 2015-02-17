@@ -1,90 +1,38 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>SASS library</title>
-		<link href='http://fonts.googleapis.com/css?family=Antic|Advent+Pro:400,200' rel='stylesheet' type='text/css'>
-		<link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
-	</head>
-	<body>
-		<nav>
-			<table>
-				<tr>
-					<td>Home</td>
-					<td>Buttons</td>
-					<td>Form</td>
-				</tr>
-			</table>
-		</nav>
-		<div class="full_width_img" id="title_area_contain">
-		<section id="title_area" class="content">
-			<h1>SASS library</h1>
-			<h2>A UI library</h2>
-		</section>
-		</div>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>SASS resources</title>
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700|Antic+Slab' rel='stylesheet' type='text/css'>
+        <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+        <link href="stylesheets/unsemantic-grid-responsive.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+    	<section id="intro" class="grid-container">
+        	<h1>SASS-Resources</h1>	
+        	<h2>A UI library by Tom Gray</h2>
+        </section>
+        <section class="grid-container article">
+            <h3>Buttons</h3>
+            <br/>
+            <article class="grid-10">
+                <button>Default Button</button>
+            </article>
+            <article class="grid-10">
+                <button class="colred">Red Button</button>
+            </article>
+            <article class="grid-10">
+                <button class="colgreen">Green Button</button>
+            </article>
+            <article class="grid-10">
+                <button class="colblue">Blue Button</button>
+            </article>
+            <article class="grid-10">
+                <button class="colgray">Gray Button</button>
+            </article>
 
-		<section class="content" id="buttons">
-			<h2>Buttons<span class="emphasis align_right">_buttons.scss</span></h2>
-			<hr/>
-			<input type="submit" value="Submit"/>
-			<p>Submit button</p>
-			<p>Variables: <span class="emphasis">$borderCol, $mainFont,$fontCol</span></p>
-			<br/>
-			<input type="submit" value="Subscribe"/>
-			<p>Subscribe button</p>
-			<p>Variables: <span class="emphasis">$subscribeCol, $mainFont, $subscribeCol</span></p>
-		</section>
 
-		<section class="content" id="form_controls">
-			<h2>Form controls<span class="emphasis align_right">_form-inputs.scss</span></h2>
-			<hr/>
-			<input type="text"/>
-			<p>Text input</p>
-			<br/>
-			<input type="password"/>
-			<p>Password input</p>
-			<br/>
-			<select>
-				<option>Option 1</option>
-				<option>Option 2</option>
-				<option>Option 3</option>
-			</select>
-			<p>Selection box</p>
-			<br/>
-			<br/>
-			<p>File upload</p>
-
-			<input id="uploadFileOutput" placeholder="Choose File" disabled="disabled" />
-			<div class="fileUpload">
-			   <span>Upload</span>
-			   <input id="uploadBtn" type="file" class="upload">
-			</div>
-			<br/>
-			<br/>
-			<!-- Search bar sends value in via get with name of q -->
-			<div class="searchContainer">
-				<form action="search.php" method="get" onsubmit="return false;">
-					<input type="text" placeholder="Search bar" name="q">
-					<input type="image" src="imgs/search.png" value="Search" name="submit" class="searchButton">
-				</form>
-			</div>
-		</section>
-		<section class="content" id="alerts">
-			<h2>Alerts<span class="emphasis align_right">_alerts.scss</span></h2>
-			<hr/>
-			<span class="alert"><h3 class="alert">Default color</h3></span>
-			<br/>
-			<span class="alert alert_success"><h3 class="alert">Success</h3></span>
-			<br/>
-			<span class="alert alert_error"><h3 class="alert">Error</h3></span>
-			<br/>
-			<span class="alert alert_blue"><h3 class="alert">other</h3></span>
-		</section>
-		<section class="content" id=""
-		<footer>
-		<div id="footer_text">
-			<h2>A library by Tom Gray</h2>
-		</div>
-		</footer>
-		<script type="text/javascript" src="script/script.js"></script>
-	</body>
+        </section>
+    </body>
 </html>

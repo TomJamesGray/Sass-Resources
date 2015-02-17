@@ -1,22 +1,36 @@
-input[type=submit]{
-	border: 5px solid $borderCol;
-	border-radius: 10px;
-	background-color:#fff;
-	padding: 10px;
-	font-size: 1.7em;
-	font-family: $mainFont;
-	cursor: pointer;
+// Set Colours
+$def: #8FBD2B;
+$red: #BD2B2B;
+$green: #8FBD2B;
+$blue: #2D82BB;
+$gray:#B0B0B0;
+
+button{
+	height:auto;
+	width:auto;
+	border-radius:5px;
+	background-color:$def;
+	border: 3px solid $def;
+	box-shadow: 0 3px 3px darken($def,20%);
+	font-family: 'Source Sans Pro', sans-serif;
 }
-input[type=submit]:hover{
-	transition: all 0.5s ease;
-	border-radius:50%;
-	color: $fontCol;
-	cursor:poiner;
+button.colred{
+	background-color:$red;
+	border: 3px solid $red;
+	box-shadow: 0 3px 3px darken($red,20%);
 }
-/*Subscribe buttons*/
-input[type=submit][value=Subscribe]{
-	border: 5px solid $subscribeCol;
+button.colgreen{
+	background-color:$green;
+	border: 3px solid $green;
+	box-shadow: 0 3px 3px darken($green,20%);
 }
-input[type=submit][value=Subscribe]:hover{
-	color:$subscribeCol;
+button.colblue{
+	background-color:$blue;
+	border: 3px solid $blue;
+	box-shadow: 0 3px 3px darken($blue,20%);
+}
+button.colgray{
+	background-color:$gray;
+	border: 3px solid $gray;
+	box-shadow: 0 3px 3px darken($gray,20%);	
 }
