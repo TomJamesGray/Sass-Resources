@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Welcome to Compass.
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
@@ -98,8 +99,73 @@ h3 {
   line-height: 1.15;
 }
 
+h4 {
+  font-size: 28px;
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height: 1.15;
+  color: #000;
+}
+
 p {
   font-family: 'Source Sans Pro', sans-serif;
+}
+
+b {
+  font-weight: 700;
+}
+
+blockquote {
+  width: 200px;
+  padding: 10px;
+  float: left;
+  background-color: #B0B0B0;
+  color: #424242;
+  font-size: 18px;
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height: 1.4;
+}
+
+blockquote.right {
+  float: right;
+}
+
+a {
+  text-decoration: underline;
+  background-color: transparent;
+  color: inherit;
+  transition: background-color 0.5s ease;
+}
+
+a:hover {
+  transition: background-color 0.5s ease;
+  background-color: #dc770c;
+}
+
+a.bullet {
+  text-decoration: none;
+}
+
+a.bullet:hover {
+  background-color: transparent;
+}
+
+a.bullet::before,
+a.bullet::after {
+  opacity: 0;
+  content: " • ";
+  transform: translateX(20px);
+}
+
+a.bullet:hover::before {
+  opacity: 1;
+  transform: translateX(0px);
+  transition: all 0.5s ease;
+}
+
+a.bullet:hover::after {
+  opacity: 1;
+  transform: translateX(0px);
+  transition: all 0.5s ease;
 }
 
 button {
@@ -110,6 +176,13 @@ button {
   border: 3px solid #8fbd2b;
   box-shadow: 0 3px 3px #506a18;
   font-family: 'Source Sans Pro', sans-serif;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  transition: border-radius 0.5s ease;
+  border-radius: 20px;
 }
 
 button.colred {

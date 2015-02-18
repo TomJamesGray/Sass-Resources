@@ -13,6 +13,12 @@ button{
 	border: 3px solid $def;
 	box-shadow: 0 3px 3px darken($def,20%);
 	font-family: 'Source Sans Pro', sans-serif;
+	cursor:pointer;
+	font-size:16px;
+}
+button:hover{
+	transition:border-radius 0.5s ease;
+	border-radius:20px;
 }
 button.colred{
 	background-color:$red;
