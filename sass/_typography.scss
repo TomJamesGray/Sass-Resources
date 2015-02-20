@@ -1,5 +1,4 @@
 $headingCol:#424242;
-$accentCol:#DC770C;
 h1{
 	font-size:64px;
 	color:$headingCol;
@@ -43,39 +42,4 @@ blockquote{
 }
 blockquote.right{
 	float:right;
-}
-
-
-a{
-	text-decoration:underline;
-	background-color:transparent;
-	color:inherit;
-	transition:background-color 0.5s ease;	
-}
-a:hover{
-	transition:background-color 0.5s ease;
-	background-color:$accentCol;
-}
-
-a.bullet{
-	text-decoration:none;
-}
-a.bullet:hover{
-	background-color:transparent;
-}
-a.bullet::before,
-a.bullet::after{
-	opacity:0;
-	content:" • ";
-	transform: translateX(20px);
-}
-a.bullet:hover::before{
-	opacity:1;
-	transform:translateX(0px);
-	transition:all 0.5s ease;
-}
-a.bullet:hover::after{
-	opacity:1;
-	transform:translateX(0px);
-	transition:all 0.5s ease;
 }

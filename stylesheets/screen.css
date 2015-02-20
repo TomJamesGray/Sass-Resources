@@ -141,11 +141,11 @@ a:hover {
   background-color: #dc770c;
 }
 
-a.bullet {
+a.bullet, a.underline, a.box {
   text-decoration: none;
 }
 
-a.bullet:hover {
+a.bullet:hover, a.underline:hover, a.box:hover {
   background-color: transparent;
 }
 
@@ -153,6 +153,7 @@ a.bullet::before,
 a.bullet::after {
   opacity: 0;
   content: " • ";
+  color: #dc770c;
   transform: translateX(20px);
 }
 
@@ -166,6 +167,31 @@ a.bullet:hover::after {
   opacity: 1;
   transform: translateX(0px);
   transition: all 0.5s ease;
+}
+
+a.underline {
+  transition: all 0.5s ease;
+  padding-bottom: 10px;
+  border-bottom: 1px solid transparent;
+  line-height: 1;
+}
+
+a.underline:hover {
+  transition: all 0.5s ease;
+  border-bottom: 3px solid #dc770c;
+  padding-bottom: 0px;
+}
+
+a.box {
+  transition: all 0.5s ease;
+  outline-offset: 10px;
+  outline: 2px solid transparent;
+}
+
+a.box:hover {
+  transition: all 0.5s ease;
+  outline-offset: 0px;
+  outline-color: #dc770c;
 }
 
 button {
