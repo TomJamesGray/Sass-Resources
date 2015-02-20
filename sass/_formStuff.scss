@@ -1,0 +1,73 @@
+$mainCol:#8FBD2B;
+// Placeholder colors
+::-webkit-input-placeholder{
+	color:#272725;
+	opacity: 0.8;
+}
+:-moz-placeholder{
+	color:#272725;
+	opacity: 0.8;
+}
+::-moz-placeholder{
+	color:#272725;
+	opacity: 0.8;
+}
+:-ms-input-placeholder{
+	color:#272725;
+}
+// Text and password input
+input[type=text], input[type=password]{
+	transition:all 0.5s ease;
+	border:3px solid $mainCol;
+	background-color: lighten($mainCol, 30%);
+	text-align:center;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size:16px;
+	padding:10px;
+	display:inline;
+}
+input[type=text]:focus, input[type=password]:focus{
+	transition:all 0.5s ease;
+	border-color:darken($mainCol,10%);
+	background-color:$mainCol;
+	outline:none;
+}
+
+// Textarea input
+textarea{
+	transition:border-color 0.75s ease;
+	border: 5px solid lighten($mainCol,20%);
+	background-color:lighten($mainCol,45%);
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size:16px;
+	line-height:1.25;
+}
+textarea:focus{
+	transition:border-color 0.75s ease;
+	border-color:$mainCol;
+	outline:none;
+}
+
+// Drop down list (select)
+// This requires "dropDown.svg" 
+select{
+	// Reset
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	appearance:none;
+	outline:none;
+	background-color:#fff;
+
+	// Niceness
+	border-width:2px;
+	border-color:$mainCol;
+	font-size:16px;
+	padding:5px;
+	padding-right:25px;
+
+	// Drop down button
+	background-image:url(../imgs/dropDown.svg);
+	background-position:center right;
+	background-repeat:no-repeat;
+	background-size:20px;
+}

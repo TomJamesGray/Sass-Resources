@@ -11,10 +11,10 @@ a:hover{
 }
 
 // Overide defaults
-a.bullet, a.underline, a.box{
+a.bullet, a.underline, a.box, a.underoverline{
 	text-decoration:none;
 }
-a.bullet:hover, a.underline:hover, a.box:hover{
+a.bullet:hover, a.underline:hover, a.box:hover, a.underoverline:hover{
 	background-color:transparent;
 }
 
@@ -48,6 +48,23 @@ a.underline:hover{
 	transition:all 0.5s ease;
 	border-bottom:3px solid $accentCol;
 	padding-bottom:0px;
+}
+
+// .underoverline links
+a.underoverline{
+	transition:all 0.5s ease;
+	padding-bottom:10px;
+	padding-top:10px;
+	border-bottom:1px solid transparent;
+	border-top:1px solid transparent;
+	line-height:1;
+}
+a.underoverline:hover{
+	transition:all 0.5s ease;
+	border-bottom:3px solid $accentCol;
+	border-top:3px solid $accentCol;
+	padding-bottom:0px;
+	padding-top:0px;
 }
 
 // .box links
