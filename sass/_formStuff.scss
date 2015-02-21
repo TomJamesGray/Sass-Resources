@@ -15,6 +15,13 @@ $mainCol:#8FBD2B;
 :-ms-input-placeholder{
 	color:#272725;
 }
+// Form labels
+label{
+	font-size:16px;
+	font-family: 'Source Sans Pro', sans-serif;
+	padding:5px;
+}
+
 // Text and password input
 input[type=text], input[type=password]{
 	transition:all 0.5s ease;
@@ -70,4 +77,47 @@ select{
 	background-position:center right;
 	background-repeat:no-repeat;
 	background-size:20px;
+}
+
+// Radio buttons
+$normalCol:#9E9E9E;
+$checkedCol:$mainCol;
+
+.radioContain{
+	width:20px;
+	height:20px;
+	display:inline;
+	position:relative;
+	margin-right:20px;
+}
+input[type=radio]{
+	position:absolute;
+	top:0;
+	left:0;
+
+	width:20px;
+	height:20px;
+	padding:0;
+	margin:0;
+
+	z-index:10;
+	opacity:0;
+}
+.radioContain > input[type=radio] + div{
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:9;
+	opacity:1;
+	width:18px;
+	height:18px;
+
+	transition:background-color 0.25s ease;
+	background-color:$normalCol;
+	border:2px solid #636363;
+	border-radius:5px;
+}
+input[type=radio]:checked + div{
+	transition:background-color 0.25s ease;
+	background-color:$checkedCol;
 }

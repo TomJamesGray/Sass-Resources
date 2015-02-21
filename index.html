@@ -1,101 +1,112 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>SASS resources</title>
-        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700|Antic+Slab' rel='stylesheet' type='text/css'>
-        <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
-        <link href="stylesheets/unsemantic-grid-responsive.css" media="screen, projection" rel="stylesheet" type="text/css" />
-    </head>
-    <body>
-    	<section id="intro" class="grid-container">
-        	<h1>SASS-Resources</h1>	
-        	<h2>A UI library by Tom Gray</h2>
-        </section>
-        <section class="grid-container article">
-            <h3>Buttons - _buttons.scss</h3>
-            <br/>
-            <article class="grid-10">
-                <button>Default Button</button>
-            </article>
-            <article class="grid-10">
-                <button class="red">.red Button</button>
-            </article>
-            <article class="grid-10">
-                <button class="green">.green Button</button>
-            </article>
-            <article class="grid-10">
-                <button class="blue">.blue Button</button>
-            </article>
-            <article class="grid-10">
-                <button class="gray">.gray Button</button>
-            </article>
-            <article class="grid-10 suffix-40">
-                <button class="noStyle">.noStyle Button</button>
-            </article>
-            <br/>
-            <br/>
-            <br/>
-            <h3>Blockquotes - _typography.scss</h3>
-            <br/>
-            <div class="grid-75 suffix-25">
-                <blockquote>
-                    “Microsoft isn't evil, they just make really crappy operating systems.”
-                    <br/>
-                    <b>Linus Torvaldus</b>
-                </blockquote>
-                <blockquote class="right">
-                    “'Sorry guys, I can’t be in Vegas because my wife’s having a breakdown.' Believe me, you don’t want to make that call to a bunch of former male cheerleaders. They will mock you with a hurtful rhythmic chant.”
-                    <br/>
-                    <b>Phil Dunphy (Ty Burrell) - Modern Family</b>
-                </blockquote>
-            </div>
-            <br/>
-            <h3>Links - _links.scss</h3>
-            <br/>
-            <h4><a href="#">This is the default link</a></h4>
-            <br/>
-            <h4><a href="#" class="bullet">This is the .bullet link</a></h4>
-            <br/>
-            <h4><a href="#" class="underline">This is the .underline link</a></h4>
-            <br/>
-            <h4><a href="#" class="underoverline">This is the .underoverline link</a></h4>
-            <br/>
-            <h4><a href="#" class="box">This is the .box link</a></h4>
-            <br/>
-            <br/>
-            <h3>Text inputs - _formStuff.scss</h3>
-            <br/>
-            <form>
-                <input type="text" name="usernameEG" placeholder="Username"/>
-                <label for="usernameEG">Text input</label>
-                <br/>
-                <br/>
-                <input type="password" name="passwordEG" placeholder="Password"/>
-                <label for="passwordEG">Password input</label>
-                <br>
-                <br/>
-                <textarea cols="60" rows="4" placeholder="Textarea"></textarea>
-                <br/>
-                <br/>
-                <select name="dropDown">
-                    <option>Option 1</option>
-                    <option>Option 2</option>
-                    <option>Option 3</option>
-                </select>
-                <label for="dropDown">Select list</label>
-                <br/>
-                <br/>
-                <input id="opt1" type="radio" name="radioEG" value="opt1">
-                <label for="opt1">Option 1</label>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>SASS resources</title>
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700|Antic+Slab' rel='stylesheet' type='text/css'>
+		<link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+		<link href="stylesheets/unsemantic-grid-responsive.css" media="screen, projection" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<section id="intro" class="grid-container">
+			<h1>SASS-Resources</h1>	
+			<h2>A UI library by Tom Gray</h2>
+		</section>
+		<section class="grid-container article">
+			<h3>Buttons - _buttons.scss</h3>
+			<br/>
+			<article class="grid-10">
+				<button>Default Button</button>
+			</article>
+			<article class="grid-10">
+				<button class="red">.red Button</button>
+			</article>
+			<article class="grid-10">
+				<button class="green">.green Button</button>
+			</article>
+			<article class="grid-10">
+				<button class="blue">.blue Button</button>
+			</article>
+			<article class="grid-10">
+				<button class="gray">.gray Button</button>
+			</article>
+			<article class="grid-10 suffix-40">
+				<button class="noStyle">.noStyle Button</button>
+			</article>
+			<br/>
+			<br/>
+			<br/>
+			<h3>Blockquotes - _typography.scss</h3>
+			<br/>
+			<div class="grid-75 suffix-25">
+				<blockquote>
+					“Microsoft isn't evil, they just make really crappy operating systems.”
+					<br/>
+					<b>Linus Torvaldus</b>
+				</blockquote>
+				<blockquote class="right">
+					“'Sorry guys, I can’t be in Vegas because my wife’s having a breakdown.' Believe me, you don’t want to make that call to a bunch of former male cheerleaders. They will mock you with a hurtful rhythmic chant.”
+					<br/>
+					<b>Phil Dunphy (Ty Burrell) - Modern Family</b>
+				</blockquote>
+			</div>
+			<br/>
+			<h3>Links - _links.scss</h3>
+			<br/>
+			<h4><a href="#">This is the default link</a></h4>
+			<br/>
+			<h4><a href="#" class="bullet">This is the .bullet link</a></h4>
+			<br/>
+			<h4><a href="#" class="underline">This is the .underline link</a></h4>
+			<br/>
+			<h4><a href="#" class="underoverline">This is the .underoverline link</a></h4>
+			<br/>
+			<h4><a href="#" class="box">This is the .box link</a></h4>
+			<br/>
+			<br/>
+			<h3>Text inputs - _formStuff.scss</h3>
+			<br/>
+			<form>
+				<input type="text" name="usernameEG" placeholder="Username"/>
+				<label for="usernameEG">Text input</label>
+				<br/>
+				<br/>
+				<input type="password" name="passwordEG" placeholder="Password"/>
+				<label for="passwordEG">Password input</label>
+				<br>
+				<br/>
+				<textarea cols="60" rows="4" placeholder="Textarea"></textarea>
+				<br/>
+				<br/>
+				<select name="dropDown">
+					<option>Option 1</option>
+					<option>Option 2</option>
+					<option>Option 3</option>
+				</select>
+				<label for="dropDown">Select list</label>
+				<br/>
+				<br/>
 
-                <input id="opt2" type="radio" name="radioEG" value="opt2">
-                <label for="opt2">Option 2</label>
+				<div class="radioContain">
+					<input id="opt1" type="radio" name="radioEG" value="opt1">
+					<div></div>
+				</div>
+				<label for="opt1">Option 1</label>
 
-                <input id="opt3" type="radio" name="radioEG" value="opt3">
-                <label for="opt3">Option 3</label>  
-            </form>
-        </section>
-    </body>
+				<div class="radioContain">
+					<input id="opt2" type="radio" name="radioEG" value="opt2">
+					<div></div>
+				</div>
+				<label for="opt2">Option 2</label>
+
+				<div class="radioContain">
+					<input id="opt3" type="radio" name="radioEG" value="opt3">
+					<div></div>
+				</div>
+				<label for="opt3">Option 3</label>
+
+			</form>
+		</section>
+	</body>
 </html>
