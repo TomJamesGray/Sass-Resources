@@ -5,7 +5,9 @@ $green: #8FBD2B;
 $blue: #2D82BB;
 $gray:#B0B0B0;
 
-button{
+// :not() selector isn't supported in IE8
+
+button:not(.noStyle){
 	height:auto;
 	width:auto;
 	border-radius:5px;
@@ -16,26 +18,26 @@ button{
 	cursor:pointer;
 	font-size:16px;
 }
-button:hover{
+button:hover:not(.noStyle){
 	transition:border-radius 0.5s ease;
 	border-radius:20px;
 }
-button.colred{
+button.red{
 	background-color:$red;
 	border: 3px solid $red;
 	box-shadow: 0 3px 3px darken($red,20%);
 }
-button.colgreen{
+button.green{
 	background-color:$green;
 	border: 3px solid $green;
 	box-shadow: 0 3px 3px darken($green,20%);
 }
-button.colblue{
+button.blue{
 	background-color:$blue;
 	border: 3px solid $blue;
 	box-shadow: 0 3px 3px darken($blue,20%);
 }
-button.colgray{
+button.gray{
 	background-color:$gray;
 	border: 3px solid $gray;
 	box-shadow: 0 3px 3px darken($gray,20%);	
