@@ -68,22 +68,33 @@
             <h3>Text inputs - _formStuff.scss</h3>
             <br/>
             <form>
-                <h4><input type="text" placeholder="Username"/>  Text input</h4>
+                <input type="text" name="usernameEG" placeholder="Username"/>
+                <label for="usernameEG">Text input</label>
                 <br/>
-                <h4><input type="password" placeholder="Password"/>  Password input</h4>
+                <br/>
+                <input type="password" name="passwordEG" placeholder="Password"/>
+                <label for="passwordEG">Password input</label>
                 <br>
+                <br/>
                 <textarea cols="60" rows="4" placeholder="Textarea"></textarea>
                 <br/>
                 <br/>
-                <h4><select>
+                <select name="dropDown">
                     <option>Option 1</option>
                     <option>Option 2</option>
                     <option>Option 3</option>
-                </select>  Select list</h4>
+                </select>
+                <label for="dropDown">Select list</label>
                 <br/>
-                <div>
-                <input id="opt1" type="radio" name=""
-                </div>    
+                <br/>
+                <input id="opt1" type="radio" name="radioEG" value="opt1">
+                <label for="opt1">Option 1</label>
+
+                <input id="opt2" type="radio" name="radioEG" value="opt2">
+                <label for="opt2">Option 2</label>
+
+                <input id="opt3" type="radio" name="radioEG" value="opt3">
+                <label for="opt3">Option 3</label>  
             </form>
         </section>
     </body>
