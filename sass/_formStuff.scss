@@ -18,7 +18,7 @@ $mainCol:#8FBD2B;
 // Form labels
 label{
 	font-size:16px;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: $copyFont;
 	padding:5px;
 }
 
@@ -28,7 +28,7 @@ input[type=text], input[type=password]{
 	border:3px solid $mainCol;
 	background-color: lighten($mainCol, 30%);
 	text-align:center;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: $copyFont;
 	font-size:16px;
 	padding:10px;
 	display:inline;
@@ -45,7 +45,7 @@ textarea{
 	transition:border-color 0.75s ease;
 	border: 5px solid lighten($mainCol,20%);
 	background-color:lighten($mainCol,45%);
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: $copyFont;
 	font-size:16px;
 	line-height:1.25;
 }
