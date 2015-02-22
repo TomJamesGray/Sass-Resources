@@ -327,7 +327,7 @@ select {
   background-size: 20px;
 }
 
-.radioContain {
+.radioContain, .checkboxContain {
   width: 20px;
   height: 20px;
   display: inline;
@@ -335,7 +335,7 @@ select {
   margin-right: 20px;
 }
 
-input[type=radio] {
+input[type=radio], input[type=checkbox] {
   position: absolute;
   top: 0;
   left: 0;
@@ -347,7 +347,8 @@ input[type=radio] {
   opacity: 0;
 }
 
-.radioContain > input[type=radio] + div {
+.radioContain > input[type=radio] + div,
+.checkboxContain > input[type=checkbox] + div {
   position: absolute;
   top: 0;
   left: 0;
@@ -364,4 +365,20 @@ input[type=radio] {
 input[type=radio]:checked + div {
   transition: background-color 0.25s ease;
   background-color: #8fbd2b;
+}
+
+input[type=checkbox] + div::after {
+  transition: opacity 0.25s ease;
+  content: '✓';
+  font-size: 35px;
+  color: #8fbd2b;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 0;
+  opacity: 0;
+}
+
+input[type=checkbox]:checked + div::after {
+  transition: opacity 0.25s ease;
+  opacity: 1;
 }

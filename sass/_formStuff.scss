@@ -79,18 +79,17 @@ select{
 	background-size:20px;
 }
 
-// Radio buttons
 $normalCol:#9E9E9E;
 $checkedCol:$mainCol;
 
-.radioContain{
+.radioContain, .checkboxContain{
 	width:20px;
 	height:20px;
 	display:inline;
 	position:relative;
 	margin-right:20px;
 }
-input[type=radio]{
+input[type=radio],input[type=checkbox]{
 	position:absolute;
 	top:0;
 	left:0;
@@ -103,7 +102,8 @@ input[type=radio]{
 	z-index:10;
 	opacity:0;
 }
-.radioContain > input[type=radio] + div{
+.radioContain > input[type=radio] + div,
+.checkboxContain > input[type=checkbox] + div{
 	position:absolute;
 	top:0;
 	left:0;
@@ -117,7 +117,23 @@ input[type=radio]{
 	border:2px solid #636363;
 	border-radius:5px;
 }
+// Radio buttons
 input[type=radio]:checked + div{
 	transition:background-color 0.25s ease;
 	background-color:$checkedCol;
+}
+// Checkbox button
+input[type=checkbox] + div::after{
+	transition:opacity 0.25s ease;
+	content: '✓';
+	font-size: 35px;
+	color: $checkedCol;
+	vertical-align: middle;
+	text-align: center;
+	line-height: 0;
+	opacity:0;
+}
+input[type=checkbox]:checked + div::after{
+	transition:opacity 0.25s ease;
+	opacity:1;
 }
