@@ -1,0 +1,15 @@
+$mainCol:#8aab1d;
+$alternateRowCol:#DBEEB4;
+td{
+	padding:3px;
+	border:1px solid #999;
+}
+td{
+	font-family:$copyFont;
+}
+table.heading tr:first-of-type{
+	background-color:$mainCol
+}
+table tr:nth-child(2n+1){
+	background-color:$alternateRowCol;
+}

@@ -382,3 +382,20 @@ input[type=checkbox]:checked + div::after {
   transition: opacity 0.25s ease;
   opacity: 1;
 }
+
+td {
+  padding: 3px;
+  border: 1px solid #999;
+}
+
+td {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+table.heading tr:first-of-type {
+  background-color: #8aab1d;
+}
+
+table tr:nth-child(2n+1) {
+  background-color: #dbeeb4;
+}
